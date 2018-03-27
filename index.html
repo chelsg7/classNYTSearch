@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <section class= "jumbotron">
-        <h1 class="display-2">
+    <section class= "jumbotron" id="head">
+        <h1 class="display-2 text-white text-center">
             New York Times Search
         </h1>
     </section>
     <section class="card panel-body container">
-        <h2>
+        <h2 class="col-12 text-center text-white card-header panel-title" id="searchhead">
             Search Parameters
         </h2>
-        <div class="input-group mb-3">
+        <div class="input-group my-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">
                     Search Term:
@@ -29,7 +29,7 @@
                 </div>
                 <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
             </div>
-            <div class="input-group-prepend">
+            <div class="input-group-prepend mx-auto">
                 <div class="form-group">
                             <label for="sel1">
                                 Number of Results
@@ -48,7 +48,7 @@
                         </div>
                 </div>
                 <div class="input-group">
-                    <div class="input-group mb-3">
+                    <div class="input-group my-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">
                             Start Year (Optional):
@@ -64,18 +64,26 @@
                         </div>
                         <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-success my-3 mx-auto">
                         Search NYT
                     </button>
-                    <button type="button" class="btn btn-secondary">
+                    <button type="button" class="btn btn-danger my-3 mx-auto">
                         Clear Form
                     </button>
                 </section>
             </section>
-            <section class=" my-5 panel-body container card" id="articles">
-                <h1>
-                    Articles Will Go Here
-                </h1>
+            <section class=" my-5 panel-body container card">
+                <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h1 class="panel-title text-center card-header text-white" id="tophead">
+                                Top Articles
+                            </h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="article-list mx-auto text-center border">
+                                Articles will appear here.
+                            </div>
+                        </div>
             </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

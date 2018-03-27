@@ -7,12 +7,76 @@
         Class NYT Search
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    
+    <section class= "jumbotron">
+        <h1 class="display-2">
+            New York Times Search
+        </h1>
+    </section>
+    <section class="card panel-body container">
+        <h2>
+            Search Parameters
+        </h2>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                    Search Term:
+                </span>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group-prepend">
+                <div class="form-group">
+                            <label for="sel1">
+                                Number of Results
+                            </label>
+                            <select class="form-control" id="sel1">
+                                <option>
+                                    10
+                                </option>
+                                <option>
+                                    5
+                                </option>
+                            <option>
+                                1
+                            </option>
+                            </select>
+                        </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">
+                            Start Year (Optional):
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">
+                            End Year (Optional):
+                        </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <button type="button" class="btn btn-primary">
+                        Search NYT
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        Clear Form
+                    </button>
+                </section>
+            </section>
+            <section class=" my-5 panel-body container card" id="articles">
+                <h1>
+                    Articles Will Go Here
+                </h1>
+            </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -10,24 +10,27 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
     <section class= "jumbotron" id="head">
         <h1 class="display-2 text-white text-center">
+                <i class="fas fa-newspaper"></i>
             New York Times Search
         </h1>
     </section>
     <section class="card panel-body container">
         <h2 class="col-12 text-center text-white card-header panel-title" id="searchhead">
+                <i class="fas fa-search"></i>
             Search Parameters
         </h2>
         <div class="input-group my-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="searchTerm">
+                <span class="input-group-text" >
                     Search Term :
                 </span>
             </div>
-                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" id="searchTerm" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
             </div>
             <div class="input-group-prepend mx-auto">
                 <div class="form-group" id="numResults">
@@ -50,19 +53,19 @@
                 <div class="input-group">
                     <div class="input-group my-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="startYear">
+                        <span class="input-group-text" >
                             Start Year (Optional) :
                         </span>
                     </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" id="startYear" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="endYear">
+                        <span class="input-group-text">
                             End Year (Optional) :
                         </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" id="endYear" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <button type="button" class="btn btn-success my-3 mx-auto" id="searchButton">
                         Search NYT
@@ -76,6 +79,7 @@
                 <div class="panel panel-success">
                         <div class="panel-heading">
                             <h1 class="panel-title text-center card-header text-white" id="tophead">
+                                    <i class="fas fa-fire text-danger"></i>
                                 Top Articles
                             </h1>
                         </div>
